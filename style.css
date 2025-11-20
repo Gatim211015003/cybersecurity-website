@@ -1,0 +1,236 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- General Page Styling --- */
+body {
+  /* Updated font for a modern look */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Softer background color */
+  color: #343a40; /* Softer text color for better readability */
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* --- Header Styling --- */
+header {
+  background: #1e3a5f;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* --- Main Content Area --- */
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); /* More subtle shadow */
+}
+
+/* --- Headings --- */
+h2 {
+  margin-top: 1.5rem;
+  color: #1e3a5f;
+  border-bottom: 2px solid #ffdd57; /* Using accent color for border */
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* --- List Styling (Improved) --- */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+ul li::before {
+  content: "→"; /* More elegant bullet */
+  position: absolute;
+  left: 0;
+  color: #1e3a5f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  top: -2px;
+}
+
+/* --- Table Styling (Modernized) --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures border-radius applies to corners */
+}
+
+table th {
+  background-color: #1e3a5f;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6; /* Horizontal borders only */
+}
+
+table tr:last-child td {
+  border-bottom: none; /* Remove border on last row */
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tr:hover {
+  background-color: #e9ecef; /* Subtle hover effect */
+}
+
+/* --- Navigation Bar (Improved with Active State) --- */
+.navbar {
+  background-color: #142d4c;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #ffdd57;
+  margin: 0 1.2rem;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  color: #fff;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Style for the current/active page link */
+.navbar a.active {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #ffdd57;
+}
+
+
+/* --- Hero Section (Homepage) --- */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(45deg, #1e3a5f, #27496d); /* Subtle gradient */
+  color: #fff;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border: none; /* Remove border from hero heading */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* --- Features Section / Cards (Homepage) --- */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #1e3a5f; /* Accent border */
+}
+
+.card h3 {
+  color: #1e3a5f;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.card a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #1e3a5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #27496d;
+  transform: scale(1.05);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Card accent colors */
+.card:nth-child(1) { border-top-color: #dc3545; } /* Red */
+.card:nth-child(2) { border-top-color: #ffc107; } /* Yellow */
+.card:nth-child(3) { border-top-color: #28a745; } /* Green */
+.card:nth-child(4) { border-top-color: #007bff; } /* Blue */
+
+/* --- Footer --- */
+footer {
+  background: #142d4c;
+  color: #adb5bd; /* Lighter color for footer text */
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}

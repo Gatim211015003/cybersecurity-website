@@ -1,0 +1,28 @@
+{
+  "malware": {
+    "types": ["Ransomware", "Trojans", "Spyware", "Worms", "Cryptojacking", "Adware"],
+    "applications": "Malware is any malicious software designed to disrupt systems, damage data, or gain unauthorized access. Unlike attacks based on deception, malware must be installed or executed on a target device to achieve its objectives.  It is often used by cybercriminals to steal sensitive data, obtain banking credentials, or extort victims for financial gain. ",
+    "advantages": "For attackers, malware offers high financial returns, especially with ransomware targeting large organizations.  Business models like Ransomware-as-a-Service (RaaS) lower the technical barrier for criminals.  Malware also allows for long-term, covert access to systems for espionage or to launch further attacks. ",
+    "disadvantages": "For victims, malware can lead to the loss of critical data, identity theft, and major financial damage.  The primary challenge for attackers is evading detection from evolving security software, requiring continuous investment in anti-analysis features to hide their malicious code. "
+  },
+  "phishing": {
+    "types": ["Email Phishing", "Spear Phishing", "CEO Fraud", "Smishing (SMS)", "Vishing (Voice)", "Pharming"],
+    "applications": "Phishing is a form of social engineering that uses deceptive electronic communications to manipulate victims into revealing sensitive data or executing harmful actions.  It fundamentally targets human psychology—exploiting trust, urgency, or fear—rather than technical system flaws.  This is why the human element is considered the primary vulnerability in phishing attacks. ",
+    "impacts": "Phishing is the leading cause of data breaches, initiating over 90% of successful hacks.  The consequences include identity theft, significant financial loss (with the average breach costing millions), and unauthorized access to personal or company accounts.  Because these breaches can take over 200 days to detect, attackers have ample time for data exfiltration and lateral movement within a network. "
+  },
+  "comparison": [
+    { "aspect": "Primary Mechanism", "malware": "Involves harmful software that requires installation or execution on a device to work. ", "phishing": "Uses psychological manipulation and deceptive messages to trick the user into taking an action. " },
+    { "aspect": "Primary Objective", "malware": "To compromise devices, disrupt systems, steal data, or demand a ransom. ", "phishing": "To trick users into revealing sensitive information like credentials or financial details. " },
+    { "aspect": "Delivery Vectors", "malware": "Delivered through infected files, malicious websites, and removable media like USB drives. ", "phishing": "Carried out through emails, SMS (Smishing), voice calls (Vishing), and counterfeit websites. " },
+    { "aspect": "Detection & Defense", "malware": "Relies on technical security controls like antivirus, sandboxing, and endpoint detection. ", "phishing": "Relies on a combination of human judgment, security training, and advanced email filtering software. " }
+  ],
+  "prevention": [
+    "Always use updated antivirus software and Advanced Endpoint Detection and Response (EDR) platforms. ",
+    "Be cautious and avoid clicking on unknown links or opening suspicious attachments.",
+    "Enable Multi-Factor Authentication (MFA), which is the single most effective defense against account takeovers. ",
+    "Participate in continuous security awareness training that includes mock phishing exercises to spot modern threats. ",
+    "Keep your software and operating systems updated with the latest security patches to fix known vulnerabilities. ",
+    "Regularly back up your important data to a separate, secure location to recover from attacks like ransomware.",
+    "Implement advanced email security that uses AI and time-of-click analysis to detect and block malicious links in real-time. "
+  ]
+}
